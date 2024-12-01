@@ -1,0 +1,93 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+
+.about-section-wrapper {
+  background-color: lightcyan; /* Black background */
+  padding: 0px 0; /* Extra padding to give space above and below the content */
+}
+
+.about-section {
+  margin-top: -60px;
+  margin-bottom: 200px;
+  position: relative; /* Ensure the section is positioned relative for stacking context */
+  z-index: 1; /* Keep the content above the background */
+}
+
+
+.counter {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0a2b1e;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.counter__title {
+  font-size: 1rem;
+  color: #0a2b1e;
+  font-weight: 500;
+  margin-bottom: 30px; /* Increased margin for more space below the title */
+}
+
+.about__content {
+  padding-left: 50px;
+  padding-right: 20px; /* Balanced padding on the right for symmetry */
+  margin-bottom: 40px; /* Increased margin for space below the content */
+}
+
+.about__img img {
+  border-radius: 15px;
+  margin-top: 20px; /* Space between image and content above it */
+  margin-bottom: 20px;
+  height: 500px; /* Fixed height for images */
+}
+
+.about__content h2 {
+  font-weight: 600;
+  margin-bottom: 30px; /* Increased spacing below the heading */
+}
+
+.about__heading {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  margin-top: 20px; /* Add space above the heading */
+  margin-bottom: 10px; /* Add space below the heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.best__heading {
+  font-size: 24px; /* Set font size */
+  color: #357ae8; /* Darker blue color */
+  margin-top: 30px; /* Space above the heading */
+  text-transform: capitalize; /* Capitalize the heading text */
+  font-weight: bold; /* Make the text bold */
+}
+
+.best-text {
+  margin-top: -15px;
+  color: black;
+  text-align: justify;
+  opacity: 0.8;
+}
+
+.about-text {
+  margin-top: -15px;
+  color: black;
+  text-align: justify;
+  opacity: 0.8;
+}
+
+.slick-dots li {
+  width: 20px;  /* Set the width of the dots */
+  height: 20px; /* Set the height of the dots */
+}
+
+.slick-dots li button {
+  width: 100%;   /* Make the button fill the dot */
+  height: 100%;  /* Make the button fill the dot */
+  border-radius: 50%; /* Keep them circular */
+  background: #357ae8; /* Change the color of the dots */
+}
+
+.slick-dots li.slick-active button {
+  background: #0a2b1e; /* Change the active dot color */
+}

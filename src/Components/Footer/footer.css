@@ -1,0 +1,49 @@
+.footer {
+  background: rgba(226, 248, 248, 0.664);
+  padding: 50px 0; /* Add padding to create space around the footer content */
+  text-align: center; /* Center align footer content */
+  border-top: 1px solid #e5e5e5; /* Optional: Add a light top border for separation */
+}
+
+.follows {
+  margin-bottom: 30px; /* Increased space between follows section and other footer elements */
+}
+
+.follows span a {
+  text-decoration: none;
+  color: #17bf9e; /* Add color to the follow links for consistency */
+  font-weight: 600; /* Increase font-weight to make links stand out */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.follows span a:hover {
+  color: #0a2b1e; /* Darken color on hover for better interactivity */
+}
+
+.follows span {
+  margin-right: 15px;
+}
+
+.link__list .link__item {
+  background: transparent;
+  margin-bottom: 20px; /* Increased space between link items for better readability */
+}
+
+.link__list a {
+  text-decoration: none;
+  color: #0a2b1e;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.link__list a:hover {
+  color: #17bf9e; /* Change link color on hover to match the design theme */
+}
+
+.ri-pantone-line{
+  margin-left: 70px;
+}
+
+.logo-footer{
+  margin-left: 47px;
+}

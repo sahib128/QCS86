@@ -1,0 +1,48 @@
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0; /* Adjust as needed */
+    color: #fff; /* Text color */
+    text-align: center;
+  }
+  
+  .banner-content {
+    z-index: 1; /* Ensure the content is above the background */
+  }
+  
+  .banner-title h1 {
+    font-size: 3rem; /* Main title size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Spacing below the title */
+  }
+  
+  .directory {
+    font-size: 1.2rem; /* Size for navigation links */
+    margin-top: 10px; /* Spacing above the directory */
+  }
+  
+  .directory a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .directory a:hover {
+    color: #FFD700; /* Change color on hover */
+  }
+  
+  .directory span {
+    margin: 0 10px; /* Spacing around the separator */
+  }
+  
+  @media (max-width: 768px) {
+    .banner-title h1 {
+      font-size: 2.5rem; /* Smaller title size on mobile */
+    }
+  
+    .directory {
+      font-size: 1rem; /* Smaller size for mobile */
+    }
+  }
+  

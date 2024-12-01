@@ -1,0 +1,101 @@
+.signup-screen {
+    position: relative;
+    height: 100vh; /* Full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow */
+    background: linear-gradient(135deg, #17bf9e, #a8f1e2);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole screen */
+    z-index: -1; /* Pushes the background image behind the form */
+}
+
+.signup-form {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1; /* Ensures the form is above the image */
+    width: 600px; /* Fixed width for the form */
+    background-color: white; /* Slightly transparent background */
+}
+
+.signup-form h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color:#17bf9e; /* Darker text color for better contrast */
+    font-weight: 700;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px; /* Spacing between the input fields */
+    display: flex;
+    gap: 20px; /* Adds space between the first and last name fields */
+}
+
+.input-group input {
+    width: 100%; /* Adjust width to fit */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group input:first-child {
+    flex: 1; /* Allow first input to take available space */
+}
+
+.input-group input:last-child {
+    flex: 1; /* Allow last input to take available space */
+}
+
+.input-group textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.file-upload-label {
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #17bf9e;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

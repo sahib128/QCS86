@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  height: 100vh; /* Full height for the body */
+  overflow: hidden; /* Prevent scrolling of the body */
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Full height for the container */
+  background-color: #fff;
+}
+
+/* Chat Window */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Chat Header (fixed at the top) */
+.chat-header {
+  background-color: #00b894;
+  padding: 15px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Messages Section (scrollable) */
+.messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Enables scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.message.sent {
+  text-align: right;
+}
+
+.message .sender {
+  font-weight: bold;
+}
+
+.message-text {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.message.sent .message-text {
+  background-color: #00b894;
+  color: white;
+}
+
+.message.received .message-text {
+  background-color: #ececec;
+}
+
+.message-input {
+  padding: 5px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space evenly between buttons and input */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+  margin-left: 400px;
+  height: 7%;
+}
+
+/* Input Field */
+.message-input input {
+  flex-grow: 1;  /* Allow the input field to grow and fill available space */
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 15px; /* Space between input and buttons */
+  margin-left: 20px;
+}
+
+/* Buttons */
+.add-button, .send-button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 8px;  /* Reduced padding for smaller buttons */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.add-button {
+  width: 50px;
+  height: 50px;
+}
+
+.send-button {
+  width: 60px;
+  height: 50px;
+}
+
+.add-button:hover, .send-button:hover {
+  background-color: #008e72;
+}
+

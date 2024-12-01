@@ -1,0 +1,75 @@
+body{
+    overflow: hidden;
+}
+
+.settings-page-container {
+    display: fixed;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .settings-sidebar {
+    width: 240px;
+    background-color:black;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .settings-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 100vh;
+    margin-top: -19px;
+  }
+  
+  .profile-page {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .user-settings-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-settings-sidebar li {
+    margin: 15px 0;
+  }
+  
+  .user-settings-sidebar button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for active button */
+  .user-settings-sidebar button.active {
+    border-bottom: 3px solid #132380; /* Blue line under the active button */
+    color: #132380; /* Optionally change the text color */
+  }
+  
+  .user-settings-sidebar button:hover {
+    background-color: #d6d6d6;
+  }
+  
+  /* Highlight active link */
+  .user-settings-sidebar button.active:hover {
+    background-color: #e0e0e0; /* Light hover effect for active button */
+  }
+  
+  .chat-page{
+    overflow: hidden;
+  }

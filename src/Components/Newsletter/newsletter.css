@@ -1,0 +1,50 @@
+.newsletter {
+  background: #17bf9e; /* Main background color */
+  padding: 60px; /* Padding around the newsletter */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center; /* Center the content */
+  margin: 40px 0; /* Increased vertical spacing above and below the newsletter */
+}
+
+.newsletter h2 {
+  color: #fff; /* Text color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.subscribe {
+  padding: 7px 10px; /* Padding for the subscribe container */
+  background: #fff; /* Background color for input area */
+  width: 60%; /* Adjust width for better responsiveness */
+  margin: 0 auto; /* Center the subscribe container */
+  border-radius: 50px; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  margin-bottom: 20px; /* Added space below the subscribe container */
+}
+
+.subscribe input {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  padding: 10px; /* Padding for better input size */
+  flex: 1; /* Allow input to grow */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 1rem; /* Font size for readability */
+  border-radius: 25px; /* Rounded input for consistency */
+}
+
+.subscribe button {
+  background: #17bf9e; /* Match button color with the newsletter background */
+  color: white; /* Text color for contrast */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+  width: 130px; /* Smooth background change on hover */
+}
+
+.subscribe button:hover {
+  background: #148d77; /* Darker shade for hover effect */
+}

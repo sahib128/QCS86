@@ -1,0 +1,66 @@
+.free__course__img {
+  position: relative;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Ensure image stays within the container bounds */
+  margin-bottom: 20px; /* Space below the image container */
+  border-radius: 10px; /* Rounded corners for the image container */
+}
+
+.free__btn {
+  position: absolute;
+  bottom: 10px; /* Position the button above the bottom edge */
+  right: 20px; /* Position from the right */
+  z-index: 999999; /* Ensure the button is above other elements */
+  padding: 6px 20px; /* Balanced button size */
+  font-size: 0.85rem; /* Slightly larger font for readability */
+  background-color: #17bf9e; /* Button background color */
+  color: #fff; /* Button text color */
+  border-radius: 5px; /* Subtle rounding for the button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.free__btn:hover {
+  background-color: #0a2b1e; /* Darker color on hover for feedback */
+}
+
+.free__course__img img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.free__course__details h6 {
+  font-weight: 600; /* Bold font weight */
+  line-height: 2rem; /* Increase line height for readability */
+  margin-top: 20px; /* Space above the heading */
+  margin-bottom: 10px; /* Space below the heading */
+  font-size: 1rem; /* Font size for headings */
+  color: #0a2b1e; /* Consistent text color */
+}
+
+.show-more-buttons,
+.view-all-button {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-right: 10px; /* Space between buttons */
+}
+
+.show-more-button:hover,
+.view-all-button:hover {
+  transform: translateY(-3px); /* Hover effect: move up */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.show-more-button:focus,
+.view-all-button:focus {
+  outline: none; /* Remove default outline */
+}

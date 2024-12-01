@@ -1,0 +1,53 @@
+.hero__content {
+  padding-top: 80px; /* Space from the top */
+  text-align: center; /* Center the content for better presentation */
+  margin-bottom: 30px; /* Added space below hero content */
+}
+
+.hero__content h2 {
+  font-weight: 600;
+  line-height: 55px;
+  margin-bottom: 20px; /* Add margin for spacing below the heading */
+}
+
+.hero__img {
+  max-width: 70%; /* Limit the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin: 30px auto 0; /* Center the image */
+  display: block; /* Ensure it behaves like a block element for centering */
+  margin-bottom: 30px; /* Added space below the image */
+}
+
+.search {
+  width: 60%;
+  border: 1px solid rgba(23, 191, 157, 0.27); /* Slightly transparent border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  margin: 20px auto; /* Center the search bar and add vertical spacing */
+  padding: 7px 10px; /* Padding inside the search bar */
+}
+
+.search input {
+  border: none;
+  outline: none;
+  padding: 7px; /* Adjusted padding for better balance */
+  flex: 1; /* Allow input to grow and take up space */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 1rem; /* Font size for better readability */
+}
+
+.search button {
+  background-color: #17bf9e; /* Match button color with border color */
+  color: white; /* Text color for contrast */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Match border radius with search bar */
+  padding: 7px 15px; /* Add padding for button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.search button:hover {
+  background-color: #148d77; /* Darker shade for hover effect */
+}

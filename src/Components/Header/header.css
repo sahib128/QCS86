@@ -1,0 +1,267 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -40px;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #0a2b1e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav__item a:hover {
+  color: #17bf9e;
+}
+
+/* Updated Search Bar Container */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: -50px; /* Adjusts position to the left */
+}
+
+.search-bar {
+  padding: 8px 14px;
+  border-radius: 20px; /* Curved corners */
+  border: 1px solid #ccc;
+  outline: none;
+  width: 250px; /* Increased width */
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #17bf9e; /* Color on focus */
+}
+
+.search-button {
+  background-color: #17bf9e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px; /* Matches the search bar's curved corners */
+  margin-left: 8px; /* Moves the button to the right */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0a2b1e;
+  transform: scale(1.05); /* Hover animation */
+}
+
+/* Login and Signup buttons */
+.btn-login, .btn-signup {
+  padding: 4px 10px; /* Reduced padding for smaller size */
+  font-size: 0.8rem; /* Smaller font size */
+  margin-left: 10px; /* Less space between buttons */
+  border-radius: 20px; /* Slightly smaller border-radius */
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 40px; /* Moves buttons container slightly to the right */
+}
+
+.btn-login {
+  background-color: #17bf9e;
+  color: white;
+  margin-left: 120px;
+}
+
+.btn-signup {
+  background-color: white;
+  color: #17bf9e;
+  border: 1px solid #17bf9e;
+}
+
+.btn-login:hover {
+  background-color: #0a2b1e;
+}
+
+.btn-signup:hover {
+  background-color: #17bf9e;
+  color: white;
+}
+
+/* Home button specific styles */
+.home-dropdown__container {
+  width: 530px;
+  height: 250px; /* Set the width specifically for the home dropdown */
+}
+
+.dropdown__container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 100;
+  border-radius: 6px;
+}
+
+.dropdown__content {
+  display: flex; /* Use flex to align items */
+  justify-content: space-between; /* Space between items and image */
+  align-items: flex-start; /* Align items to the top */
+  padding: 0; /* Remove padding to align image with items */
+}
+
+.dropdown__items {
+  display: flex;
+  flex-direction: column; /* Stack dropdown items vertically */
+}
+.dropdown__item {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between text and label */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 30px;
+}
+
+.dropdown__item a {
+  display: flex; /* Allow the link to be a flex container */
+  justify-content: space-between; /* Space out the title and label */
+  align-items: center; /* Center vertically */
+  flex-grow: 1; /* Allow the link to grow to fill space */
+}
+
+.dropdown__item a:hover {
+  color: #17bf9e;
+}
+
+.dropdown__image {
+  width: 150px; /* Width of the image */
+  height: 200px; /* Maintain aspect ratio */
+  margin-left: 20px; /* Space from the text */
+  margin-top: 0; /* Reset any top margin to align it better */
+}
+
+.label {
+  background-color: #ff414d; /* Your existing styles */
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin-left: 15px; /* Space of approximately 4 characters (adjust as needed) */
+}
+
+/* Show dropdown on hover */
+.nav__item:hover .dropdown__container {
+  display: block;
+}
+
+/* Specific dropdown display for Home */
+.settings-icon-container:hover .dropdown__container.settings-dropdown__container {
+  display: block;
+}
+
+.nav__right {
+  margin-left: auto;
+}
+
+.nav__right p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #0a2b1e;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+/* Settings icon container styles */
+.settings-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown__container.settings-dropdown__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; /* Position below the icon */
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Padding around menu items */
+  z-index: 100;
+  border-radius: 6px;/* Minimum width for the menu */
+  width: 130px;
+}
+
+
+/* Show dropdown menu on hover */
+.settings-icon-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Styling individual dropdown items */
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #0a2b1e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item a:hover {
+  background-color: #28a146;
+}
+
+/* Optional: Add icons to dropdown items (if needed) */
+.dropdown-item i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  .nav__list {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .nav__right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .search-bar-container {
+    display: none; /* Hide search bar on smaller screens */
+  }
+}
+@media (max-width: 991px) {
+  .nav__list {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+.choose__img img {
+  border-radius: 15px;
+  max-width: 100%; /* Ensures the image fits the container properly */
+  height: auto; /* Maintain aspect ratio of the image */
+  margin-bottom: 20px; /* Added spacing below the image */
+}
+
+.choose__content {
+  padding-right: 50px;
+  margin-bottom: 40px; /* Increased space below the content for better separation */
+}
+
+.choose__content h2 {
+  font-weight: 600;
+  margin-bottom: 30px; /* Increased space between heading and content */
+}
+
+.choose__img {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  margin-top: 30px; /* Increased space between image and content above it */
+  z-index: 1; /* Adjusted z-index to avoid conflicts with other elements */
+}
+
+.play__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 2; /* Simplified the z-index to avoid unnecessary complexity */
+  width: 60px; /* Slightly increased the width for better visibility */
+  height: 60px; /* Adjust height accordingly */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better focus */
+}
+
+.play__icon i {
+  color: #17bf9e;
+  font-size: 2rem;
+  padding: 10px;
+}

@@ -1,0 +1,112 @@
+/* Global container */
+.user-settings-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Main content area styling */
+.user-profile-main {
+  margin-left: 25%;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+/* Profile header styling */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items with space between */
+  margin-bottom: 20px;
+}
+
+.profile-picture-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between picture and button group */
+}
+
+.user-profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between the buttons */
+}
+
+.profile-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-pic {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-pic {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+/* Profile details section */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-details label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Adjust the input width for better alignment */
+.profile-details input,
+.profile-details textarea {
+  width: 50%; /* Width of other form fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Name inputs: Shorten width for alignment */
+.name-input {
+  width: 45%; /* Shorten width of name fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Save button styling */
+.save-button {
+  margin-top: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 200px;
+  margin-left: 370px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}

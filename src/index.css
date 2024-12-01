@@ -1,0 +1,6 @@
+/* Base styles that apply to all pages */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}

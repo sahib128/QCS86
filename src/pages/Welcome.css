@@ -1,0 +1,10 @@
+/* Fade-in effect for the entire Welcome page */
+.welcome-page {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .welcome-page.fade-in {
+    opacity: 1;
+  }
+  

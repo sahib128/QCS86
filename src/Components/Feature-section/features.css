@@ -1,0 +1,52 @@
+.features-section {
+  padding: 80px 80px ;
+  background-color: #f9f9f9; /* Set a light background color */
+}
+.features-header {
+  margin-bottom: 40px;
+}
+
+.next-section {
+  padding-top: 0; /* Remove top padding for the next section */
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.features-description {
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+  color: black;
+  opacity: 0.8;
+}
+
+.single__feature {
+  display: flex;
+  align-items: center;
+}
+
+.feature-icon {
+  font-size: 4rem; /* Increase icon size */
+  color: #ff5722;
+  margin-right: 35px; /* Add spacing */
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.feature-desc {
+  color: #666;
+  font-size: 1rem;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: 220px;
+}
